@@ -21,7 +21,7 @@
     scrolling="yes"
     style="
 width: {width > 800 ? data.desktop_width: data.mobile_width}px; 
-height: {width > 800 ? (data.desktop_height): (data.mobile_height)}px; 
+height: {width > 800 ? (data.desktop_height_modified): (data.mobile_height)}px; 
 visibility: visible;"
     src="{data.url}?:embed=y&:showVizHome=n&:device={width > 800 ? 'desktop' : 'phone'}" />
 </div>

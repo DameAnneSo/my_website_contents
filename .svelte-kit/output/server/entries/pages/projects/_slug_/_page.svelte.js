@@ -20,7 +20,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   $$result.css.add(css);
-  return `${$$result.head += `<!-- HEAD_svelte-1ct3qin_START -->${$$result.title = `<title>${escape(data.title)}</title>`, ""}<meta name="description"${add_attribute("content", data.description, 0)}><!-- HEAD_svelte-1ct3qin_END -->`, ""} <div class="embed-center svelte-95xijk"${add_styles({ "background-color": data.color })}><iframe frameborder="0" allowtransparency="true" allowfullscreen="true"${add_attribute("title", data.title, 0)} marginheight="0" marginwidth="0" scrolling="yes" style="${"width: " + escape(data.mobile_width, true) + "px; height: " + escape(data.mobile_height, true) + "px; visibility: visible;"}" src="${escape(data.url, true) + "?:embed=y&:showVizHome=n&:device=" + escape("phone", true)}"></iframe></div> ${validate_component(Footer_portfolio, "Footer_portfolio").$$render($$result, { backgroundColor: data.color }, {}, {})}`;
+  return `${$$result.head += `<!-- HEAD_svelte-1ct3qin_START -->${$$result.title = `<title>${escape(data.title)}</title>`, ""}<meta name="description"${add_attribute("content", data.description, 0)}><!-- HEAD_svelte-1ct3qin_END -->`, ""} <div class="embed-center svelte-95xijk"${add_styles({ "background-color": data.color })}><iframe frameborder="0" allowtransparency="true" allowfullscreen="true"${add_attribute("title", data.title, 0)} marginheight="0" marginwidth="0" scrolling="yes" style="${"width: " + escape(data.mobile_width, true) + "px; height: " + escape(
+    data.mobile_height,
+    true
+  ) + "px; visibility: visible;"}" src="${escape(data.url, true) + "?:embed=y&:showVizHome=n&:device=" + escape("phone", true)}"></iframe></div> ${validate_component(Footer_portfolio, "Footer_portfolio").$$render($$result, { backgroundColor: data.color }, {}, {})}`;
 });
 export {
   Page as default
