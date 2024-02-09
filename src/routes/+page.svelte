@@ -143,6 +143,8 @@ Hero section
     width: 1em;
     margin-left: -1em;
   }
+
+
   /* mobile responsiveness */
   @media screen and (min-width: 800px) {
     .hero-img {

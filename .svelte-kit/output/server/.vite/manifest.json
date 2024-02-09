@@ -9,7 +9,7 @@
   },
   "_Footer_classic.js": {
     "css": [
-      "_app/immutable/assets/Footer_classic.CLpltTyB.css"
+      "_app/immutable/assets/Footer_classic.q__GnokP.css"
     ],
     "file": "chunks/Footer_classic.js",
     "imports": [
@@ -88,7 +88,7 @@
   },
   "src/routes/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.LbUK02Eb.css"
+      "_app/immutable/assets/_page.nDa89WI9.css"
     ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [

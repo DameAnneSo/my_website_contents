@@ -99,6 +99,15 @@ h4 {
   margin-bottom: 1rem;
   font-family: var(--ff-primary);
 }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  ;
+}
+
+
 h1 {
   font-size: 3rem;
 }
@@ -111,17 +120,23 @@ h3 {
 h4 {
   font-size: 1.563rem;
 }
+h5{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--clr-grey-9);
+
+}
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-7);
   font-size: 1rem;
 }
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.4rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   h3 {
     font-size: 1.953rem;

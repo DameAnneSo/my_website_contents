@@ -4,7 +4,7 @@
 <section class="portfolio-page-center">
   <!-- section title -->
   <div class="section-title">
-    <h1>What I have been up to</h1>
+    <h2>My work</h2>
     <div class="underline" />
     <!-- end of section title -->
 
@@ -21,7 +21,7 @@
     <a href="projects/buffy_viz" target="_blank" class="project-1">
       <article class="project">
         <img src="./images/portfolio_buffy_3.png" alt="screenshot of the dataviz 6 reasons to (re)watch Buffy the Vampire Slayer" class="project-img" />
-        <div class="project-info">
+          <div class="project-info">
           <h4>6 reasons to (re)watch Buffy the Vampire Slayer</h4>
           <p>
             Tableau Ironviz Top 10 qualifiers (2021)
@@ -29,6 +29,9 @@
             Long listed in the IIAB (2022)
           </p>
         </div>
+        <div class="project-IIBA-logo">
+  <img src="./images/2022_IIBA_Longlist.png" alt="2022 IIBA Longlist" style="position: absolute; right: 0; bottom: 0; max-width: 25%; z-index: 1;" />
+</div>
       </article>
     </a>
     <!-- end of single project -->
@@ -41,6 +44,9 @@
           <h4>Ted Lasso and his pop culture references</h4>
           <p>'Viz of the Day' on Tableau Public (2023)</p>
         </div>
+        <div class="project-IIBA-logo">
+  <img src="./images/2023_IIBA_Longlist.png" alt="2022 IIBA Longlist" style="position: absolute; right: 0; bottom: 0; max-width: 25%; z-index: 1;" />
+</div>
       </article>
     </a>
     <!-- end of single project -->
@@ -71,6 +77,9 @@
             <br />Long listed in the IIAB (2022)
           </p>
         </div>
+        <div class="project-IIBA-logo">
+  <img src="./images/2022_IIBA_Longlist.png" alt="2022 IIBA Longlist" style="position: absolute; right: 0; bottom: 0; max-width: 25%; z-index: 1;" />
+</div>
       </article>
     </a>
     <!-- end of single project -->

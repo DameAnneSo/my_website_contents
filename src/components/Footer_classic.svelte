@@ -22,7 +22,7 @@
     <!-- single item -->
     <li>
       <a href="https://bsky.app/profile/curiousdata.bsky.social" target="_blank" class="social-icon">
-        <i class="fa-solid fa-dove" />
+        <i class="fa-solid fa-retweet"></i>
       </a>
     </li>
     <!-- end of single item -->

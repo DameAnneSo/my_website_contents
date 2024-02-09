@@ -19,7 +19,8 @@ import Footer from "../../components/Footer_classic.svelte";
     <div class="section-center timeline-center">
       <!-- single timeline time -->
       <article class="timeline-item">
-        <h4>2001-2008: Growing an interest in News and the Web</h4>
+        <h5>2001-2008</h5>
+        <h4>Growing an interest in News and the Web</h4>
         <p>
           I studied Humanities with a Master’s degree in History and one in International Relations in Paris.
           <br />
@@ -32,7 +33,8 @@ import Footer from "../../components/Footer_classic.svelte";
 
       <!-- single timeline time -->
       <article class="timeline-item">
-        <h4>2008-2018: Early career in Social Media analysis</h4>
+        <h5>2008-2018</h5>
+        <h4>Early career in Social Media analysis</h4>
         <p>
           In multiple roles on the agency (Publicis) and software provider (Meltwater) side, I conducted analyses based on social media data, aka social listening.
           <br />
@@ -46,7 +48,9 @@ import Footer from "../../components/Footer_classic.svelte";
 
       <!-- single timeline time -->
       <article class="timeline-item">
-        <h4>2018-now: Data Analysis at LinkedIn</h4>
+        <h5>2018-now</h5>
+        <h4>Data Analysis at LinkedIn</h4>
+        
         <p>
           By day, I leverage LinkedIn's data to develop insights to help some of our biggest EMEA tech clients make better marketing decisions.
           <br />
@@ -60,7 +64,8 @@ import Footer from "../../components/Footer_classic.svelte";
 
       <!-- single timeline time -->
       <article class="timeline-item">
-        <h4>Since 2020: a focus on Dataviz</h4>
+        <h5>Since 2020</h5>
+        <h4>a focus on Dataviz</h4>
         <p>
           I keep honing my skills via projects at LinkedIn and personal ones I am sharing here.
           <br />

@@ -94,7 +94,7 @@
       <!-- single item -->
       <li>
         <a href="https://bsky.app/profile/curiousdata.bsky.social" target="_blank" class="social-icon">
-          <i class="fa-solid fa-dove" />
+          <i class="fa-solid fa-retweet" />
         </a>
       </li>
       <!-- end of single item -->
@@ -164,7 +164,7 @@ Navbar style
       justify-self: end;
     }
     .nav-links a {
-      text-transform: capitalize;
+      text-transform: uppercase;
       color: var(--clr-grey-2);
       letter-spacing: var(--spacing);
       /* font-weight:bold; */
