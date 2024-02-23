@@ -16,7 +16,7 @@
     <article class="hero-info">
       <div class="underline" />
       <h1>I'm Anne-Sophie</h1>
-      <h3>a <span class="headline_visualisation">data visualisation</span> practitioner</h3>
+      <h3>a <span class="headline_visualisation">data viz</span> practitioner</h3>
     </article>
     <article class="hero-img">
       <img src="images/anneso_photo.png" class="hero-photo home-photo" alt="Anne-Sophie Pereira De Sá smiling, white woman with dark curly hair" />
