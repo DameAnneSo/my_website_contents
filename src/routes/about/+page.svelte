@@ -72,9 +72,9 @@ import Footer from "../../components/Footer_classic.svelte";
           I am currently on a journey to learn D3 and Svelte, hence this website to hone my web development skills.
         </p>
         <br />
-        <h5>
-          And in case someone at the European Broadcasting Union reads this: I wouldn't say no to a full time position to data visualise the Eurovision Song Contest data. Just
-          thought I would mention...
+          <h5>
+          My dream job? A full time position to data visualise the Eurovision Song Contest data. 
+          Just thought I would mention, in case someone at the European Broadcasting Union reads this...
         </h5>
         <span class="number"> 4 </span>
       </article>
@@ -117,7 +117,7 @@ import Footer from "../../components/Footer_classic.svelte";
       <h4>Data analysis</h4>
       <div class="underline" />
       <p>
-        I tend to be a thorough investigator, I keep pushing for the so what and discard the information that is not compelling to my analysis.
+        A thorough investigator, I keep pushing for the so what and discard the information that is not compelling to my analysis.
         <br /><br />
         I can deep dive into a wide variety of quantitative, qualitative, large or unstructured datasets.
       </p>
@@ -152,7 +152,7 @@ import Footer from "../../components/Footer_classic.svelte";
 
         <br />
         <br />
-        Three of my vizzes also appeared as a'Viz of the Day' on Tableau's Public Gallery.
+        Three of my vizzes also appeared as a 'Viz of the Day' on Tableau's Public Gallery.
       </p>
     </article>
     <!-- end of single service -->
@@ -178,9 +178,9 @@ import Footer from "../../components/Footer_classic.svelte";
       <h4>Automation and programming</h4>
       <div class="underline" />
       <p>
-        I'm used to webscraping techniques to extract data (via Webscraper.io, Google Sheets or Beautiful Soup), although I mostly use advanced SQL for my main job.
+        I'm used to webscraping techniques to extract data (via Webscraper.io, Google Sheets or Beautiful Soup) and use advanced SQL for my main job.
         <br /><br />
-        On my journey to learn D3 and Svelte, I have created this website with HTML, CSS, a bit of Javascript and moved it to the Svelte framework.
+        On my journey to learn D3 and Svelte, I have created this website with HTML, CSS, Javascript and Svelte.
       </p>
     </article>
     <!-- end of single service -->
@@ -210,8 +210,12 @@ Timeline (in About page)
 
   .timeline p {
     margin-bottom: 0;
-  }
-
+      text-align: left;
+    }
+    
+.timeline h5 {
+  margin-bottom: 0.3rem;
+}
   /* only select the children elements that are even numbers */
   .timeline-item:nth-child(even) {
     border-left: 2px dashed var(--clr-primary-5);

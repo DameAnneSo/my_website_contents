@@ -16,7 +16,7 @@
     <article class="hero-info">
       <div class="underline" />
       <h1>I'm Anne-Sophie</h1>
-      <h3>a <span class="headline_visualisation">data viz</span> practitioner</h3>
+      <h3>a <span class="headline_visualisation">dataviz</span> practitioner</h3>
     </article>
     <article class="hero-img">
       <img src="images/anneso_photo.png" class="hero-photo home-photo" alt="Anne-Sophie Pereira De Sá smiling, white woman with dark curly hair" />
@@ -51,7 +51,7 @@
         Because the web domain Data Curious was already taken! And because my head is full of serious data questions on various topics.
 
         <br /> <br />
-        Some of the questions I have explored through the medium of datavisualisation:
+        Some of the questions I have explored through the medium of data visualisation:
       </p>
       <ul class="ul-questions">
         <li>What's the best recipe to win at Eurovision?</li>
