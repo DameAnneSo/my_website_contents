@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from 'svelte';
+
   // add fixed class to navbar
   // let navbar
   let isFixed = false
