@@ -1,5 +1,5 @@
 git checkout prod
-git merge main
-git add .
-git commit -m "deploying to prod"
+git merge -m "Merge main into prod" main
 git push -u origin prod
+git checkout main
+```
