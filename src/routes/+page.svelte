@@ -10,6 +10,7 @@
 </svelte:head>
 
 <Navbar />
+
 <!-- header -->
 <header class="hero">
   <div class="section-center hero-center">
