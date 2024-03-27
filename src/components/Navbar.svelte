@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
-
   // add fixed class to navbar
   // let navbar
   let isFixed = false
@@ -12,16 +10,31 @@
       // navbar.classList.remove('navbar-fixed')
       isFixed = false
     }
-  }
+    console.log
+}
 
   // add toggle action on buttons of the sidebar
   let isOpen = false
   const toggleSideBar = function () {
     isOpen = !isOpen
   }
+
+  // let log =''
+
+  // console.log = function (message) {
+  //       log=''
+  //       if (typeof message == 'object') {
+  //           log += (JSON && JSON.stringify ? JSON.stringify(message) : message)
+  //       } else {
+  //           log += message;
+  //       }
+  //   }
 </script>
 
+
 <svelte:window on:scroll={scrollFunction} />
+
+<!-- {log} -->
 
 <!-- navbar HTML -->
 <nav class:navbar-fixed={isFixed} class="nav" id="nav">
@@ -36,10 +49,10 @@
     <!-- nav-links -->
     <ul class="nav-links">
       <li>
-        <a href="/"> home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <a href="/about"> About</a>
+        <a href="/about">About</a>
       </li>
       <li>
         <a href="/projects">Projects</a>
