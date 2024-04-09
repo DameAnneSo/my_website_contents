@@ -31,20 +31,11 @@
   "_index.js": {
     "file": "chunks/index.js"
   },
-  "_index2.js": {
-    "file": "chunks/index2.js",
-    "imports": [
-      "_prod-ssr.js"
-    ]
-  },
   "_internal.js": {
     "file": "chunks/internal.js",
     "imports": [
       "_ssr.js"
     ]
-  },
-  "_prod-ssr.js": {
-    "file": "chunks/prod-ssr.js"
   },
   "_ssr.js": {
     "file": "chunks/ssr.js"
@@ -69,7 +60,6 @@
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
     "imports": [
-      "_prod-ssr.js",
       "_internal.js",
       "_index.js",
       "_exports.js",
@@ -98,9 +88,6 @@
   },
   "src/routes/about/+page.js": {
     "file": "entries/pages/about/_page.js",
-    "imports": [
-      "_index2.js"
-    ],
     "isEntry": true,
     "src": "src/routes/about/+page.js"
   },
@@ -118,9 +105,6 @@
   },
   "src/routes/blog/+page.js": {
     "file": "entries/pages/blog/_page.js",
-    "imports": [
-      "_index2.js"
-    ],
     "isEntry": true,
     "src": "src/routes/blog/+page.js"
   },
@@ -138,9 +122,6 @@
   },
   "src/routes/contact/+page.js": {
     "file": "entries/pages/contact/_page.js",
-    "imports": [
-      "_index2.js"
-    ],
     "isEntry": true,
     "src": "src/routes/contact/+page.js"
   },
@@ -158,9 +139,6 @@
   },
   "src/routes/projects/+page.js": {
     "file": "entries/pages/projects/_page.js",
-    "imports": [
-      "_index2.js"
-    ],
     "isEntry": true,
     "src": "src/routes/projects/+page.js"
   },
