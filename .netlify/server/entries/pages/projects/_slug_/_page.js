@@ -24,10 +24,10 @@ const data = [
     mobile_width: "375",
     mobile_height: "7989",
     desktop_width: "1020",
-    desktop_height_modified: "6727",
+    desktop_height_modified: "7327",
     color: "#100e0f",
     mobile_height_native: "7962",
-    desktop_height_native: "6700",
+    desktop_height_native: "7300",
     background_gradient: ""
   },
   {
