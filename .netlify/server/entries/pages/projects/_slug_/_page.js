@@ -1,4 +1,4 @@
-import { r as redirect } from "../../../../chunks/index.js";
+import { r as redirect } from "../../../../chunks/index2.js";
 const data = [
   {
     index: "1",

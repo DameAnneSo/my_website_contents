@@ -84,6 +84,5 @@ Blog Page
   .blog-info {
     align-self: center;
   }
-/*
 
 </style>
