@@ -125,14 +125,8 @@ const options = {
     app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="UTF-8" />\n    <meta http-equiv="X-UA-Compatible" content="IE=edge" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <meta\n      name="keywords"\n      content="data visualisation, datavisualisation, data visualization, datavisualization, dataviz, interactive visualisation, interactive visualization"\n    />\n     <!--sveltekit modifications -->\n<!-- <link rel="icon" href="' + assets2 + '/favicon.png" /> -->\n' + head + `
     <!--icons fontawesome -->
     
-    <link
-      rel="stylesheet"
-   
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
     <link rel='stylesheet' href='` + assets2 + "/css/normalize.css'>\n    <link rel='stylesheet' href='" + assets2 + `/css/global.css'>
     
     <!--fonts: pompiere and montserrat -->
@@ -226,7 +220,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "16sgjkv"
+  version_hash: "178ypw0"
 };
 async function get_hooks() {
   return {};
