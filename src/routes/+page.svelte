@@ -35,7 +35,7 @@
     <!-- intro img -->
     <article class="intro-img">
       <img
-        src="./images/portfolio_buffy.png"
+        src="./images/portfolio_buffy_sans.png"
         class="intro-info home-photo"
         alt="snippet of a chart from my piece called 6 Reasons to(re)watch Buffy showing an arc diagram that displays all the payoffs and foreshadows in the TV series. The horizontal axis is the time (meaning the progression of the 144 episodes, 7 seasons) and each arc is a payoff (if above the line) or a foreshadow (if below) the horizontal line" />
     </article>
@@ -43,20 +43,17 @@
     <article class="intro-info">
       <!-- section title -->
       <div class="section-title intro-title">
-        <h2>Why Curious Data?</h2>
+        <h2>Quantifying qualitative questions</h2>
         <div class="underline" />
       </div>
       <!-- end of section title -->
 
       <p class="hero-text">
-        Because the web domain Data Curious was already taken! And because my head is full of serious data questions on various topics.
-
-        <br /> <br />
-        Some of the questions I have explored through the medium of data visualisation:
+        Some of the curious questions I have explored through the medium of data visualisation:
       </p>
       <ul class="ul-questions">
         <li>What's the best recipe to win at Eurovision?</li>
-        <li>What companies need to know about sustainability conversations before posting on LinkedIn?</li>
+        <li>Are IMDB and Rotten Tomatoes ratings similar?</li>
         <li>What makes the musical Hamilton, the TV series Buffy, and the board game Seven Wonders so great?</li>
       </ul>
 

@@ -15,14 +15,14 @@
     <!-- end of single item -->
     <!-- single item -->
     <li>
-      <a href="https://vis.social/@curiousdata" target="_blank" class="social-icon">
-        <i class="fab fa-mastodon" />
+      <a href="https://github.com/DameAnneSo" target="_blank" class="social-icon">
+        <i class="fa-brands fa-github"></i>
       </a>
     </li>
     <!-- single item -->
     <li>
       <a href="https://bsky.app/profile/curiousdata.bsky.social" target="_blank" class="social-icon">
-        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-brands fa-bluesky"></i>
       </a>
     </li>
     <!-- end of single item -->
@@ -63,7 +63,4 @@ Footer
     color: var(--clr-primary-4);
   }
 
-  .timeline-item h4 {
-    text-transform: none;
-  }
 </style>

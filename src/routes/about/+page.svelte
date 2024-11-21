@@ -28,12 +28,12 @@
         <h5>2001-2008</h5>
         <h4>Growing an interest in News and the Web</h4>
         <p>
-          I studied Humanities with a Master’s degree in History and one in
-          International Relations in Paris.
-          <br />
+          In Paris, I studied Humanities with a Master’s degree in History and another one in
+          International Relations.
+          <!-- <br />
           During my studies, I ran a daily blog for three years and completed several
           internships, including one at the French Consulate of Sao Paulo where I
-          got into following current events and the public opinion.
+          got into following current events and the public opinion. -->
           <span class="number"> 1 </span>
         </p>
       </article>
@@ -47,12 +47,12 @@
           In multiple roles on the agency (Publicis) and software provider
           (Meltwater) side, I conducted analyses based on social media data, aka
           social listening.
-          <br />
+          <br /><br />
           Passionate about social justice, I also volunteered to help several NGOs
           make the most of their website and social media strategy.
-          <br />
+          <br /><br />
           In parallel, I self trained in multiple areas: data analysis (SQL, statistics,
-          web scraping) and data visualisation.
+          web scraping) and data visualisation (Tableau, Flourish).
         </p>
         <span class="number"> 2 </span>
       </article>
@@ -68,8 +68,8 @@
           our biggest EMEA tech clients make better marketing decisions.
           <br />
           <br />
-          I love to educate and upskill people about data visualisation; I host a
-          monthly workshop for our team of 90 data analysts, and inspiring sessions
+          I love to educate and upskill people about data visualisation; I have hosted  a
+          monthly workshop for our team of 90 data analysts and inspiring sessions
           for a broader internal audience of business users.
           <span class="number"> 3 </span>
         </p>
@@ -81,11 +81,9 @@
         <h5>Since 2020</h5>
         <h4>a focus on Dataviz</h4>
         <p>
-          I keep honing my skills via projects at LinkedIn and personal ones I
-          am sharing here.
+          I keep honing my skills via projects at LinkedIn and personal ones I am sharing here.
           <br />
-          I am currently on a journey to learn D3 and Svelte, hence this website
-          to hone my web development skills.
+          Long time Tableau user, I have just published my first project with D3, Svelte,and Layercake. Check out my portfolio page!
         </p>
         <br />
         <span class="number"> 4 </span>
