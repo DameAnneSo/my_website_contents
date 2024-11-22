@@ -24,7 +24,7 @@ import Footer from "../../components/Footer_classic.svelte";
       <!-- section title -->
       <div class="section-title blog-title">
         <h2>Blog in construction</h2>
-        <div class="underline" />
+        <div class="underline"></div>
       </div>
       <!-- end of section title -->
       <div class="blog-text">
