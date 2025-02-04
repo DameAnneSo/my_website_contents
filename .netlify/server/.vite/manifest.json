@@ -23,7 +23,7 @@
     "file": "chunks/Projects_gallery.js",
     "name": "Projects_gallery",
     "css": [
-      "_app/immutable/assets/Projects_gallery.Daja1BTz.css"
+      "_app/immutable/assets/Projects_gallery.DVmVecYa.css"
     ]
   },
   "_attributes.js": {
@@ -52,29 +52,29 @@
       "_index.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+  "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
     "name": "entries/fallbacks/error.svelte",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
     "isEntry": true,
     "imports": [
       "_index.js",
       "_exports.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte": {
+  "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte": {
     "file": "entries/fallbacks/layout.svelte.js",
     "name": "entries/fallbacks/layout.svelte",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte",
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte",
     "isEntry": true,
     "imports": [
       "_index.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+  "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
     "name": "index",
-    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@2.9.0_@sveltejs+vite-plugin-svelte@4.0.2_svelte@5.6.2_vite@5.4.11__svelte@5.6.2_vite@5.4.11/node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
       "_index.js",
@@ -100,7 +100,7 @@
       "_Footer_classic.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.Duw3LMLj.css"
+      "_app/immutable/assets/_page.C3dxaQrv.css"
     ]
   },
   "src/routes/about/+page.js": {
@@ -119,7 +119,7 @@
       "_Footer_classic.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.r2O0ZC4-.css"
+      "_app/immutable/assets/_page.Czg7v83O.css"
     ]
   },
   "src/routes/blog/+page.js": {
