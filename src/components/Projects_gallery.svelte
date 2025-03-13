@@ -40,31 +40,12 @@
         </article>
       </a>
       <!-- end of single project -->
-      <!-- single project -->
-      <a
-        href="https://www.linkedin.com/business/marketing/blog/research-and-insights/be-part-of-the-sustainability-conversation-on-linkedin-and-not-just-on-earth-day"
-        target="_blank"
-        class="project-2"
-      >
-        <article class="project">
-          <img
-            src="./images/portfolio_sustainability.png"
-            alt="screenshot of the dataviz LinkedIn: sustainability conversations"
-            class="project-img"
-          />
-          <div class="project-info">
-            <h4>LinkedIn: sustainability conversations</h4>
-            <h5>Excel | PowerPoint (yes, yes)</h5>
-            <p>Posted on the LinkedIn Marketing blog</p>
-          </div>
-        </article>
-      </a>
-      <!-- end of single project -->
-      <!-- single project -->
+
+       <!-- single project -->
       <a
         href="https://jamesbondratings.netlify.app/"
         target="_blank"
-        class="project-3"
+        class="project-2"
       >
         <article class="project">
           <img
@@ -79,6 +60,33 @@
         </article>
       </a>
       <!-- end of single project -->
+
+
+      <!-- single project -->
+      <a href="projects/cat_viz" target="_blank" class="project-3">
+        <article class="project">
+          <img
+            src="./images/portfolio_cat.png"
+            alt="screenshot of the dataviz 'Things I love about my cat'"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h4>Things I love about my cat</h4>
+            <h5>Tableau | Figma</h5>
+            <!-- <p>An analysis of the musical attributes of songs and albums. Viz of the Day</p> -->
+            <p></p>
+          </div>
+          <div class="project-IIBA-logo">
+            <img
+              src="./images/2024_IIBA_Longlist.png"
+              alt="2022 IIBA Longlist"
+              style="position: absolute; right: 0; bottom: 0; max-width: 25%; z-index: 1;"
+            />
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+
       <!-- single project -->
       <a href="projects/tedlasso_viz" target="_blank" class="project-4">
         <article class="project">
@@ -155,24 +163,27 @@
         </article>
       </a>
       <!-- end of single project -->
-      <!-- single project -->
-      <a href="projects/cat_viz" target="_blank" class="project-7">
+             <!-- single project -->
+      <a
+        href="https://www.linkedin.com/business/marketing/blog/research-and-insights/be-part-of-the-sustainability-conversation-on-linkedin-and-not-just-on-earth-day"
+        target="_blank"
+        class="project-7"
+      >
         <article class="project">
           <img
-            src="./images/portfolio_cat.gif"
-            alt="screenshot of the dataviz 'Things I love about my cat'"
+            src="./images/portfolio_sustainability.png"
+            alt="screenshot of the dataviz LinkedIn: sustainability conversations"
             class="project-img"
           />
           <div class="project-info">
-            <h4>Things I love about my cat</h4>
-            <h5>Tableau | Figma</h5>
-            <!-- <p>An analysis of the musical attributes of songs and albums. Viz of the Day</p> -->
-            <p></p>
+            <h4>LinkedIn: sustainability conversations</h4>
+            <h5>Excel | PowerPoint (yes, yes)</h5>
+            <p>Posted on the LinkedIn Marketing blog</p>
           </div>
         </article>
       </a>
       <!-- end of single project -->
-
+     
       <!-- single project -->
       <a
         href="https://public.tableau.com/app/profile/anne.sophie5083"
