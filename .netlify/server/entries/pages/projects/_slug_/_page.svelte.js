@@ -15,8 +15,12 @@ function _page($$payload, $$props) {
     $$payload2.title = `<title>${escape_html(data.title)}</title>`;
     $$payload2.out += `<meta name="description"${attr("content", data.description)}>`;
   });
-  $$payload.out += `<div${add_styles({ "background-color": data.color })} class="embed-center svelte-95xijk"><iframe frameborder="0" allowtransparency="true" allowfullscreen="true"${attr("title", data.title)} marginheight="0" marginwidth="0" scrolling="yes"${attr("style", ` width: ${stringify(data.mobile_width)}px; height: ${stringify(data.mobile_height)}px; visibility: visible;`)}${attr("src", `${stringify(data.url)}?:embed=y&:showVizHome=n&:device=${stringify("phone")}`)}></iframe></div> `;
-  Footer_portfolio($$payload, { backgroundColor: data.color });
+  $$payload.out += `<div${add_styles({
+    background: data.background_gradient || data.color
+  })} class="embed-center svelte-95xijk"><iframe frameborder="0"${attr("title", data.title)} marginheight="0" marginwidth="0" scrolling="yes"${attr("style", ` width: ${stringify(data.mobile_width)}px; height: ${stringify(data.mobile_height)}px; visibility: visible;`)}${attr("src", `${stringify(data.url)}?:embed=y&:showVizHome=n&:device=${stringify("phone")}`)}></iframe></div> `;
+  Footer_portfolio($$payload, {
+    backgroundColor: data.background_gradient || data.color
+  });
   $$payload.out += `<!---->`;
   bind_props($$props, { data });
   pop();

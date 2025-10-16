@@ -4,17 +4,14 @@
   let width
 </script>
 
-
 <svelte:head>
   <title>{data.title}</title>
   <meta name="description" content={data.description} />
 </svelte:head>
 
-<div class="embed-center" bind:clientWidth={width} style:background-color={data.color}>
+<div class="embed-center" bind:clientWidth={width} style:background={data.background_gradient || data.color}>
   <iframe
     frameborder="0"
-    allowtransparency="true"
-    allowfullscreen="true"
     title={data.title}
     marginheight="0"
     marginwidth="0"
@@ -23,10 +20,10 @@
 width: {width > 800 ? data.desktop_width: data.mobile_width}px; 
 height: {width > 800 ? (data.desktop_height_modified): (data.mobile_height)}px; 
 visibility: visible;"
-    src="{data.url}?:embed=y&:showVizHome=n&:device={width > 800 ? 'desktop' : 'phone'}" />
+    src="{data.url}?:embed=y&:showVizHome=n&:device={width > 800 ? 'desktop' : 'phone'}"> </iframe>
 </div>
 
-<Footer_portfolio backgroundColor={data.color} />
+<Footer_portfolio backgroundColor={data.background_gradient || data.color} />
 
 <style>
   .embed-center {

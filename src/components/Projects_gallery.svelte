@@ -12,7 +12,7 @@
       <ul>
         <li>'Viz of Day' on Tableau Public three times</li>
         <li>
-          Longlisted for the 'Information is Beautiful Awards' (IIAB) three
+          Longlisted for the 'Information is Beautiful Awards' (IIAB) four
           times
         </li>
         <li>Top 10 in 2021 Tableau's Ironviz Competition</li>
