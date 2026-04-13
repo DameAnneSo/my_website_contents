@@ -1,29 +1,26 @@
-import { _ as add_styles, V as escape_html, $ as bind_props, S as pop, Q as push, Y as head, Z as stringify } from "../../../../chunks/index.js";
-import { a as attr } from "../../../../chunks/attributes.js";
-function Footer_portfolio($$payload, $$props) {
-  push();
-  let backgroundColor = $$props["backgroundColor"];
-  const date = (/* @__PURE__ */ new Date()).getFullYear();
-  $$payload.out += `<footer${add_styles({ "background-color": backgroundColor })} class="footer_visualisation svelte-jvzyys"><a href="/" class="svelte-jvzyys"><p class="svelte-jvzyys">© <span id="date">${escape_html(date)}</span> Anne-Sophie Pereira De Sá. All rights reserved</p></a></footer>`;
-  bind_props($$props, { backgroundColor });
-  pop();
+import { a2 as attr_style, e as escape_html, a3 as bind_props, a0 as head, a4 as attr, a5 as stringify } from "../../../../chunks/renderer.js";
+function Footer_portfolio($$renderer, $$props) {
+  $$renderer.component(($$renderer2) => {
+    let backgroundColor = $$props["backgroundColor"];
+    const date = (/* @__PURE__ */ new Date()).getFullYear();
+    $$renderer2.push(`<footer class="footer_visualisation svelte-jyndc0"${attr_style("", { "background-color": backgroundColor })}><a href="/" class="svelte-jyndc0"><p class="svelte-jyndc0">© <span id="date">${escape_html(date)}</span> Anne-Sophie Pereira De Sá. All rights reserved</p></a></footer>`);
+    bind_props($$props, { backgroundColor });
+  });
 }
-function _page($$payload, $$props) {
-  push();
-  let data = $$props["data"];
-  head($$payload, ($$payload2) => {
-    $$payload2.title = `<title>${escape_html(data.title)}</title>`;
-    $$payload2.out += `<meta name="description"${attr("content", data.description)}>`;
+function _page($$renderer, $$props) {
+  $$renderer.component(($$renderer2) => {
+    let data = $$props["data"];
+    head("gygcht", $$renderer2, ($$renderer3) => {
+      $$renderer3.title(($$renderer4) => {
+        $$renderer4.push(`<title>${escape_html(data.title)}</title>`);
+      });
+      $$renderer3.push(`<meta name="description"${attr("content", data.description)}/>`);
+    });
+    $$renderer2.push(`<div class="embed-center svelte-gygcht"${attr_style("", { background: data.background_gradient || data.color })}><iframe frameborder="0"${attr("title", data.title)} marginheight="0" marginwidth="0" scrolling="yes"${attr_style(` width: ${stringify(data.mobile_width)}px; height: ${stringify(data.mobile_height)}px; visibility: visible;`)}${attr("src", `${stringify(data.url)}?:embed=y&:showVizHome=n&:device=${stringify("phone")}`)}></iframe></div> `);
+    Footer_portfolio($$renderer2, { backgroundColor: data.background_gradient || data.color });
+    $$renderer2.push(`<!---->`);
+    bind_props($$props, { data });
   });
-  $$payload.out += `<div${add_styles({
-    background: data.background_gradient || data.color
-  })} class="embed-center svelte-95xijk"><iframe frameborder="0"${attr("title", data.title)} marginheight="0" marginwidth="0" scrolling="yes"${attr("style", ` width: ${stringify(data.mobile_width)}px; height: ${stringify(data.mobile_height)}px; visibility: visible;`)}${attr("src", `${stringify(data.url)}?:embed=y&:showVizHome=n&:device=${stringify("phone")}`)}></iframe></div> `;
-  Footer_portfolio($$payload, {
-    backgroundColor: data.background_gradient || data.color
-  });
-  $$payload.out += `<!---->`;
-  bind_props($$props, { data });
-  pop();
 }
 export {
   _page as default

@@ -1,7 +1,7 @@
 <script>
-  import Gallery from "../components/Projects_gallery.svelte";
-  import Navbar from "./../components/Navbar.svelte";
-  import Footer from "./../components/Footer_classic.svelte";
+import Gallery from "../components/Projects_gallery.svelte";
+import Navbar from "./../components/Navbar.svelte";
+import Footer from "./../components/Footer_classic.svelte";
 </script>
 
 <svelte:head>
@@ -20,7 +20,7 @@
 <header class="hero">
   <div class="section-center hero-center">
     <article class="hero-info">
-      <div class="underline" />
+      <div class="underline"></div>
       <h1>I'm Anne-Sophie</h1>
       <h3>
         a <span class="headline_visualisation">dataviz</span> practitioner
@@ -41,7 +41,7 @@
       />
     </article>
     <!-- <a href="#featured" class="scroll-link"> -->
-    <i class="hero-arrow fa-solid fa-arrow-down" />
+    <i class="hero-arrow fa-solid fa-arrow-down"></i>
     <!-- </a> -->
   </div>
 </header>
@@ -63,7 +63,7 @@
       <!-- section title -->
       <div class="section-title intro-title">
         <h4>Why does data visualisation matter to me?</h4>
-        <div class="underline" />
+        <div class="underline"></div>
       </div>
       <!-- end of section title -->
 
@@ -175,10 +175,10 @@
       <h4>Data Visualisation</h4>
       <div class="underline"></div>
       <p>
-        Since 2024, I have started working with D3, Svelte, and Layercake.
+        Since 2024, I am working with D3, Svelte, and Layercake.
         <br /> <br />
         Prior to that, in 2021, I qualified for the Top 10 of Tableau's annual competition
-        Ironviz. Three of my vizzes also appeared as a 'Viz of the Day' on Tableau's
+        Ironviz. Four of my vizzes also appeared as a 'Viz of the Day' on Tableau's
         Public Gallery.
       </p>
     </article>
@@ -249,7 +249,7 @@
     <!-- section title -->
     <div class="section-title">
       <h2>Let's get in touch</h2>
-      <div class="underline" />
+      <div class="underline"></div>
     </div>
     <!-- end of section title -->
     <p class="video-text">
@@ -266,284 +266,284 @@
 <Footer />
 
 <style>
-  /*
+/*
 =============== 
 Hero section
 ===============
 */
 
-  .headline_visualisation {
-    color: var(--clr-primary-5);
-  }
+.headline_visualisation {
+  color: var(--clr-primary-5);
+}
 
-  /* underline added to globals */
-  .hero .underline {
-    margin-bottom: 0;
-    margin-left: 0;
-  }
+/* underline added to globals */
+.hero .underline {
+  margin-bottom: 0;
+  margin-left: 0;
+}
 
+.hero-img {
+  display: none;
+  -webkit-animation: slidefromRight 3s ease-in-out 1;
+  animation: slidefromRight 3s ease-in-out 1;
+}
+
+.hero-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.hero-info {
+  color: var(--clr-grey-5);
+  -webkit-animation: slidefromLeft 3s ease-in-out 1;
+  animation: slidefromLeft 3s ease-in-out 1;
+}
+
+.hero-text {
+  margin-top: 1.25rem;
+  justify-items: start;
+}
+
+ul.ul-questions li::before {
+  content: "●";
+  color: var(--clr-primary-5);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* mobile responsiveness */
+@media screen and (min-width: 800px) {
   .hero-img {
-    display: none;
-    -webkit-animation: slidefromRight 3s ease-in-out 1;
-    animation: slidefromRight 3s ease-in-out 1;
+    display: block;
+    position: relative;
   }
-
   .hero-center {
-    min-height: calc(100vh - 5rem);
-    display: grid;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c c";
   }
 
   .hero-info {
-    color: var(--clr-grey-5);
-    -webkit-animation: slidefromLeft 3s ease-in-out 1;
-    animation: slidefromLeft 3s ease-in-out 1;
+    grid-area: a;
   }
 
+  .hero-img {
+    grid-area: b;
+  }
+
+  .hero-arrow {
+    grid-area: c;
+  }
+
+  /* home-photo added to globals */
+
+  .hero-img::before,
+  .intro-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    top: 1rem;
+    right: -1rem;
+    border-radius: var(--radius);
+  }
+}
+
+@media screen and (min-width: 992px) {
   .hero-text {
-    margin-top: 1.25rem;
-    justify-items: start;
+    padding-right: 0;
   }
-
-  ul.ul-questions li::before {
-    content: "●";
-    color: var(--clr-primary-5);
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-
-  /* mobile responsiveness */
-  @media screen and (min-width: 800px) {
-    .hero-img {
-      display: block;
-      position: relative;
-    }
-    .hero-center {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "a b"
-        "c c";
-    }
-
-    .hero-info {
-      grid-area: a;
-    }
-
-    .hero-img {
-      grid-area: b;
-    }
-
-    .hero-arrow {
-      grid-area: c;
-    }
-
-    /* home-photo added to globals */
-
-    .hero-img::before,
-    .intro-img::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 0.25rem solid var(--clr-primary-5);
-      top: 1rem;
-      right: -1rem;
-      border-radius: var(--radius);
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    .hero-text {
-      padding-right: 0;
-    }
-  }
-  /*
+}
+/*
 =============== 
 intro section
 ===============
 */
-  /* section-title added to globals */
+/* section-title added to globals */
 
-  .intro-title {
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-  .intro-title .underline {
-    margin-left: 0;
-  }
+.intro-title {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.intro-title .underline {
+  margin-left: 0;
+}
 
+.intro-center {
+  display: grid;
+  gap: 3rem 2rem;
+  place-items: center;
+}
+
+.intro-img {
+  display: block;
+  position: relative;
+  /* justify-self: center; */
+}
+
+@media screen and (min-width: 800px) {
   .intro-center {
-    display: grid;
-    gap: 3rem 2rem;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
   }
+}
+.intro-img::before {
+  right: 1rem;
+}
 
-  .intro-img {
-    display: block;
-    position: relative;
-    /* justify-self: center; */
-  }
+.intro-info {
+  align-self: center;
+}
 
-  @media screen and (min-width: 800px) {
-    .intro-center {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  .intro-img::before {
-    right: 1rem;
-  }
-
-  .intro-info {
-    align-self: center;
-  }
-
-  /*
+/*
 
  /*
 =============== 
 Services (in About page)
 ===============
 */
-  /* small screen layout setup */
-  /* bg-grey in globals */
+/* small screen layout setup */
+/* bg-grey in globals */
 
-  .bg-grey {
-    background-color: var(--clr-grey-11);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 5rem;
-  }
+.bg-grey {
+  background-color: var(--clr-grey-11);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+}
 
-  .service {
-    background: var(--clr-white);
-    padding: 3rem 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: var(--radius);
-    text-align: center;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-  }
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 
-  .service-icon {
-    height: 4rem;
-    width: 4rem;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    /* this svg property is not working */
-    fill: #e29da8;
-  }
+.service-icon {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  /* this svg property is not working */
+  fill: #e29da8;
+}
 
-  .service .underline {
-    width: 3rem;
-    height: 0.12rem;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-  }
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 
-  .service p {
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-  }
+.service p {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 
-  .service:hover {
-    background: var(--clr-primary-3);
-    color: var(--clr-white);
-  }
+.service:hover {
+  background: var(--clr-primary-3);
+  color: var(--clr-white);
+}
 
-  .service:hover p {
-    color: var(--clr-white);
-  }
+.service:hover p {
+  color: var(--clr-white);
+}
 
-  .service:hover .underline {
-    background: var(--clr-white);
-  }
+.service:hover .underline {
+  background: var(--clr-white);
+}
 
-  .service:hover .service-icon {
-    fill: var(--clr-white);
-  }
+.service:hover .service-icon {
+  fill: var(--clr-white);
+}
 
-  @media screen and (min-width: 676px) {
-    .services-center {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      -webkit-column-gap: 2rem;
-      -moz-column-gap: 2rem;
-      column-gap: 2rem;
-    }
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
   }
+}
 
-  @media screen and (min-width: 992px) {
-    .services-center {
-      grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: repeat(3, 1fr);
   }
-  /*
+}
+/*
 =============== 
 Connect section 
 ===============
 */
-  .connect {
-    min-height: 35vh;
-    position: relative;
-    padding: 10rem 0 5rem 0;
-    margin: 5rem 0 0 0;
-    display: grid;
-    place-items: center;
-  }
+.connect {
+  min-height: 35vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0 0 0;
+  display: grid;
+  place-items: center;
+}
 
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    z-index: -2;
-  }
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -2;
+}
 
-  .connect::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--clr-grey-11);
-    opacity: 0.7;
-    z-index: -1;
-  }
+.connect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-grey-11);
+  opacity: 0.7;
+  z-index: -1;
+}
 
-  .video-banner .section-title {
-    margin-bottom: 2rem;
-  }
+.video-banner .section-title {
+  margin-bottom: 2rem;
+}
 
-  .video-text {
-    max-width: 30rem;
-  }
-  .video-banner {
-    background-color: var(--clr-primary-8);
-    padding: 3rem 5rem 7rem 5rem;
-    text-align: center;
-    /* I used https://bennettfeely.com/clippy/ for this shape */
-    -webkit-clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 84%,
-      75% 84%,
-      84% 99%,
-      64% 84%,
-      0 84%
-    );
-    clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 84%,
-      75% 84%,
-      84% 99%,
-      64% 84%,
-      0 84%
-    );
-  }
+.video-text {
+  max-width: 30rem;
+}
+.video-banner {
+  background-color: var(--clr-primary-8);
+  padding: 3rem 5rem 7rem 5rem;
+  text-align: center;
+  /* I used https://bennettfeely.com/clippy/ for this shape */
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 84%,
+    75% 84%,
+    84% 99%,
+    64% 84%,
+    0 84%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 84%,
+    75% 84%,
+    84% 99%,
+    64% 84%,
+    0 84%
+  );
+}
 </style>

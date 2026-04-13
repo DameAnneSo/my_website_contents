@@ -10,7 +10,7 @@
 
     <div class="projects-text">
       <ul>
-        <li>'Viz of Day' on Tableau Public three times</li>
+        <li>'Viz of Day' on Tableau Public four times</li>
         <li>
           Longlisted for the 'Information is Beautiful Awards' (IIAB) four
           times
@@ -43,19 +43,19 @@
 
        <!-- single project -->
       <a
-        href="https://jamesbondratings.netlify.app/"
+        href="https://imdb-show-explorer.vercel.app/"
         target="_blank"
         class="project-2"
       >
         <article class="project">
           <img
-            src="./images/portfolio_james_bond.png"
-            alt="screenshot of the dataviz The Movie Ratings Conundrum that compares the different IMBD and Rotten Tomatoes ratings of James Bond movies"
+            src="./images/portfolio_IMBD_best_rated_shows.gif"
+            alt="screenshot of the IMDb best-rated TV shows explorer, made with Svelte and D3.js"
             class="project-img"
           />
           <div class="project-info">
-            <h4>The Movie Ratings Conundrum</h4>
-            <h5>Svelte | D3 | LayerCake</h5>
+            <h4>IMDb best-rated TV shows explorer</h4>
+            <h5>Svelte | D3</h5>
           </div>
         </article>
       </a>
