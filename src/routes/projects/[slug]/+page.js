@@ -1,4 +1,5 @@
 import { redirect } from '@sveltejs/kit';
+// @ts-ignore
 import data from '../../../data/portfolio_pages_info.csv';
 
 

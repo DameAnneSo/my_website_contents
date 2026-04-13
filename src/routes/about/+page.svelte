@@ -86,7 +86,7 @@
           I keep honing my skills via projects at LinkedIn and personal ones I
           am sharing here.
           <br />
-          Long time Tableau user, I have just published my first projects with D3,
+          Long time Tableau user, I started publishing projects with D3,
           Svelte,and Layercake in 2024. Check out my projects page!
         </p>
         <br /><a href="/projects" class="btn">my portfolio</a>

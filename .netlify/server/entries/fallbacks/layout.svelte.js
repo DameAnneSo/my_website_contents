@@ -1,10 +1,8 @@
-import { S as pop, Q as push } from "../../chunks/index.js";
-function Layout($$payload, $$props) {
-  push();
+import "clsx";
+function Layout($$renderer, $$props) {
   let { children } = $$props;
-  children($$payload);
-  $$payload.out += `<!---->`;
-  pop();
+  children($$renderer);
+  $$renderer.push(`<!---->`);
 }
 export {
   Layout as default

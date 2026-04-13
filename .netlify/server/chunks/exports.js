@@ -1,3 +1,6 @@
+import { n as noop } from "./renderer.js";
+import { s as safe_not_equal } from "./root.js";
+const SCHEME = /^[a-z][a-z\d+\-.]+:/i;
 const internal = new URL("sveltekit-internal://");
 function resolve(base, path) {
   if (path[0] === "/" && path[1] === "/") return path;
@@ -23,25 +26,15 @@ function decode_params(params) {
   }
   return params;
 }
-const tracked_url_properties = (
-  /** @type {const} */
-  [
-    "href",
-    "pathname",
-    "search",
-    "toString",
-    "toJSON"
-  ]
-);
-function make_trackable(url, callback, search_params_callback) {
+function make_trackable(url, callback, search_params_callback, allow_hash = false) {
   const tracked = new URL(url);
   Object.defineProperty(tracked, "searchParams", {
     value: new Proxy(tracked.searchParams, {
       get(obj, key) {
         if (key === "get" || key === "getAll" || key === "has") {
-          return (param) => {
+          return (param, ...rest) => {
             search_params_callback(param);
-            return obj[key](param);
+            return obj[key](param, ...rest);
           };
         }
         callback();
@@ -52,6 +45,8 @@ function make_trackable(url, callback, search_params_callback) {
     enumerable: true,
     configurable: true
   });
+  const tracked_url_properties = ["href", "pathname", "search", "toString", "toJSON"];
+  if (allow_hash) tracked_url_properties.push("hash");
   for (const property of tracked_url_properties) {
     Object.defineProperty(tracked, property, {
       get() {
@@ -70,7 +65,7 @@ function make_trackable(url, callback, search_params_callback) {
       return inspect(url.searchParams, opts);
     };
   }
-  {
+  if (!allow_hash) {
     disable_hash(tracked);
   }
   return tracked;
@@ -80,7 +75,7 @@ function disable_hash(url) {
   Object.defineProperty(url, "hash", {
     get() {
       throw new Error(
-        "Cannot access event.url.hash. Consider using `$page.url.hash` inside a component instead"
+        "Cannot access event.url.hash. Consider using `page.url.hash` inside a component instead"
       );
     }
   });
@@ -102,20 +97,58 @@ function allow_nodejs_console_log(url) {
     };
   }
 }
-const DATA_SUFFIX = "/__data.json";
-const HTML_DATA_SUFFIX = ".html__data.json";
-function has_data_suffix(pathname) {
-  return pathname.endsWith(DATA_SUFFIX) || pathname.endsWith(HTML_DATA_SUFFIX);
+const subscriber_queue = [];
+function readable(value, start) {
+  return {
+    subscribe: writable(value, start).subscribe
+  };
 }
-function add_data_suffix(pathname) {
-  if (pathname.endsWith(".html")) return pathname.replace(/\.html$/, HTML_DATA_SUFFIX);
-  return pathname.replace(/\/$/, "") + DATA_SUFFIX;
-}
-function strip_data_suffix(pathname) {
-  if (pathname.endsWith(HTML_DATA_SUFFIX)) {
-    return pathname.slice(0, -HTML_DATA_SUFFIX.length) + ".html";
+function writable(value, start = noop) {
+  let stop = null;
+  const subscribers = /* @__PURE__ */ new Set();
+  function set(new_value) {
+    if (safe_not_equal(value, new_value)) {
+      value = new_value;
+      if (stop) {
+        const run_queue = !subscriber_queue.length;
+        for (const subscriber of subscribers) {
+          subscriber[1]();
+          subscriber_queue.push(subscriber, value);
+        }
+        if (run_queue) {
+          for (let i = 0; i < subscriber_queue.length; i += 2) {
+            subscriber_queue[i][0](subscriber_queue[i + 1]);
+          }
+          subscriber_queue.length = 0;
+        }
+      }
+    }
   }
-  return pathname.slice(0, -DATA_SUFFIX.length);
+  function update(fn) {
+    set(fn(
+      /** @type {T} */
+      value
+    ));
+  }
+  function subscribe(run, invalidate = noop) {
+    const subscriber = [run, invalidate];
+    subscribers.add(subscriber);
+    if (subscribers.size === 1) {
+      stop = start(set, update) || noop;
+    }
+    run(
+      /** @type {T} */
+      value
+    );
+    return () => {
+      subscribers.delete(subscriber);
+      if (subscribers.size === 0 && stop) {
+        stop();
+        stop = null;
+      }
+    };
+  }
+  return { set, update, subscribe };
 }
 function validator(expected) {
   function validate(module, file) {
@@ -181,18 +214,18 @@ const validate_layout_server_exports = validator(valid_layout_server_exports);
 const validate_page_server_exports = validator(valid_page_server_exports);
 const validate_server_exports = validator(valid_server_exports);
 export {
-  add_data_suffix as a,
-  decode_pathname as b,
-  decode_params as c,
+  SCHEME as S,
+  decode_params as a,
+  validate_layout_exports as b,
+  validate_page_server_exports as c,
   disable_search as d,
-  validate_layout_exports as e,
-  validate_page_server_exports as f,
-  validate_page_exports as g,
-  has_data_suffix as h,
-  validate_server_exports as i,
+  validate_page_exports as e,
+  resolve as f,
+  decode_pathname as g,
+  validate_server_exports as h,
   make_trackable as m,
   normalize_path as n,
-  resolve as r,
-  strip_data_suffix as s,
-  validate_layout_server_exports as v
+  readable as r,
+  validate_layout_server_exports as v,
+  writable as w
 };
